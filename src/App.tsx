@@ -1,11 +1,13 @@
-import { Button } from '@mui/material';
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import Order from './pages/Order';
 
 const App = () => {
   return (
     <>
-      <div className=" bg-black text-white">this is react asthis di teh main thing</div>
-      <Button variant="contained">Hello, World!</Button>
+      <Routes>
+        <Route path="/" element={<Order />} />
+      </Routes>
     </>
   );
 };
