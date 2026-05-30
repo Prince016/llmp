@@ -1,13 +1,10 @@
 import './App.css';
-import { Route, Routes } from 'react-router-dom';
-import Order from './pages/Order';
+import AppRoutes from '@/routes/AppRoutes';
 
 const App = () => {
   return (
     <>
-      <Routes>
-        <Route path="/" element={<Order />} />
-      </Routes>
+      <AppRoutes />
     </>
   );
 };
